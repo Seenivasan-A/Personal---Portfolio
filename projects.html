@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Projects | Seenivasan A</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f9f9f9;
+    }
+    header {
+      background: #fff;
+      padding: 20px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+    }
+    .logo {
+      font-size: 24px;
+      font-weight: 700;
+      color: purple;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: purple;
+    }
+
+    .section-title {
+      text-align: center;
+      font-size: 2.5rem;
+      margin-top: 50px;
+      color: #333;
+    }
+    .section-subtitle {
+      text-align: center;
+      color: #666;
+      margin-bottom: 40px;
+    }
+    .project-cards {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 30px;
+      padding: 0 20px 60px;
+    }
+    .project-card {
+      background: #fff;
+      border-radius: 16px;
+      box-shadow: 0 8px 16px rgba(0,0,0,0.08);
+      padding: 20px;
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .project-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 12px 30px rgba(128, 0, 128, 0.3);
+    }
+    .project-card img {
+      width: 100%;
+      border-radius: 10px;
+      height: 180px;
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+    .project-card h3 {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+      color: #222;
+    }
+    .project-card p {
+      font-size: 0.95rem;
+      color: #555;
+      margin-bottom: 10px;
+    }
+    .tag {
+      background: purple;
+      color: #fff;
+      padding: 5px 12px;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      display: inline-block;
+      margin-bottom: 8px;
+    }
+    .red { color: red; }
+    .green { color: green; }
+    .card-buttons {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 10px;
+    }
+    .card-buttons a,
+    .card-buttons button {
+      background: purple;
+      color: #fff;
+      padding: 8px 14px;
+      border: none;
+      border-radius: 6px;
+      text-decoration: none;
+      font-size: 0.9rem;
+      cursor: pointer;
+    }
+    .card-buttons .disabled {
+      background: #ccc;
+      cursor: not-allowed;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">SEENIVASAN</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="internship.html">Internships</a>
+      <a href="certificates.html">Certificates</a>
+    </nav>
+  </header>
+
+  <h2 class="section-title">My Projects</h2>
+  <p class="section-subtitle">Check out some of my recent projects</p>
+
+  <div class="project-cards">
+  <div class="project-card">
+    <img src="Images/project1.png" alt="Project Image" onerror="this.src='https://via.placeholder.com/300x180?text=Project+Preview';"/>
+    <h3>React Calculator</h3>
+    <p>A responsive calculator app built using React.js, supporting basic operations with modern UI.</p>
+    <span class="tag">React.js</span>
+    <p>Status: <span class="green">Completed</span></p>
+    <div class="card-buttons">
+      <a href="https://rec-calculator.netlify.app/" target="_blank">Live Demo</a>
+      <a href="https://github.com/Seenivasan-A/React.js--Calculator?tab=readme-ov-file" target="_blank">Code</a>
+    </div>
+  </div>
+  <div class="project-card">
+  <img src="Images/doctor.png" alt="Doctor Appointment Booking System" />
+  <h3 class="project-title">Doctor Appointment Booking System</h3>
+  <p class="project-description">
+    A full-stack web application that allows patients to book doctor appointments, view schedules. Includes login(Doctors and Patients) and database management.
+  </p>
+  <span class="tag">Full Stack | PHP | MySQL</span>
+  <p>Status: <span class="green">Completed</span></p>
+  <div class="card-buttons">
+    <a href="https://doctorappointmentbookings.netlify.app/" target="_blank">Live Demo</a>
+    <a href="https://github.com/Seenivasan-A/Doctor_Apppointment_Booking_System" target="_blank">Code</a>
+  </div>
+  
+</div>
+
+<div class="project-card">
+  <img src="Images/learnhub.png" alt="Learn Hub Project" />
+  <h3 class="project-title">Learn Hub</h3>
+  <p class="project-description">
+    A responsive learning platform built with Bootstrap for frontend and Spring Boot for backend. Includes student-teacher login, file upload, announcements, and course management features.
+  </p>
+  <span class="tag">Bootstrap | Spring Boot</span>
+  <p>Status: <span class="green">Completed</span></p>
+  <div class="card-buttons">
+    <button class="disabled">Live Demo</button>
+    <a href="https://github.com/Seenivasan-A/Learn-Hub" target="_blank">Code</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img src="Images/aestheticaura.png" alt="Aesthetic Aura Project" />
+  <h3 class="project-title">Aesthetic Aura</h3>
+  <p class="project-description">
+    A visually rich static website designed as part of a Web Application Development project. Built with HTML and CSS, focusing on layout, color, and responsive design.
+  </p>
+  <span class="tag">Bootstrap</span>
+  <p>Status: <span class="green">Completed</span></p>
+  <div class="card-buttons">
+    <a href="https://aestheticauraa.netlify.app/" target="_blank">Live Demo</a>
+    <a href="https://github.com/Seenivasan-A/Aesthetic_Aura_WAD_Project" target="_blank">Code</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img src="Images/bmi.png" alt="BMI Calculator Project" />
+  <h3 class="project-title">BMI Calculator</h3>
+  <p class="project-description">
+    A simple and interactive Body Mass Index calculator built using HTML, CSS, and JavaScript. It allows users to input their height and weight to calculate their BMI with visual feedback.
+  </p>
+  <span class="tag">HTML | CSS | JavaScript</span>
+  <p>Status: <span class="green">Completed</span></p>
+  <div class="card-buttons">
+    <a href="https://seenivasan-a.github.io/BMI-calculator/" target="_blank">Live Demo</a>
+    <a href="https://github.com/Seenivasan-A/BMI-calculator" target="_blank">Code</a>
+  </div>
+</div>
+
+<div class="project-card">
+  <img src="Images/med.png" alt="Medi Track Project" />
+  <h3 class="project-title">Medi Track</h3>
+  <p class="project-description">
+    A full-stack digital healthcare platform under development using React for the frontend and Spring Boot for the backend. Designed to manage and securely share medical reports with features like login authentication, download, and report preview.
+  </p>
+  <span class="tag">React.js | Spring Boot | Full Stack</span>
+  <p>Status: <span class="red">On Going</span></p>
+  <div class="card-buttons">
+    <button class="disabled">Live Demo</button>
+    <a href="https://github.com/Medi-Track-Team1/Medi-Track-Frontend" target="_blank">Frontend Code</a>
+  </div>
+</div>
+
+
+</div>
+
+</body>
+</html>
